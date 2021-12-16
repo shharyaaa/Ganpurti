@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.header-logo {
+    margin: 10px;
+    padding: 5px;
+}
+.header-logo img {
+    max-width: 120px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+header{
+  z-index: 999;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+  padding: 0 100px;
+  transition: 0.6s;
+}
+
+header .logo{
+  color: #fff;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .navigation{
+  position: relative;
+  line-height: 50px;
+  transition: 0.6s;
+    font-size: large;
+}
+
+header.sticky .navigation{
+  line-height: 60px;
+}
+
+header .navigation .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  user-select: none;
+}
+
+.menu-item > a{
+  color:#ed3237;
+  font-size: 1em;
+  text-decoration: none;
+  margin: 20px;
+  padding: 25px 0;
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.menu-item > a:hover{
+  color: #fcac35;
+  transition: 0.3s;
+    font-size: 1.2em;
+}
+
+
+header.sticky .menu-item .sub-menu{
+  top: 60px;
+}
+
+.menu-item:hover .sub-menu{
+  pointer-events: all;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.menu-btn{
+	
+  display:none;
+}
+.close-btn{
+	
+  display:none;
+}
+
+
+@media (max-width: 1060px){
+  header .navigation .menu{
+    position: fixed;
+    display: block;
+    background: white;
+    min-width: 300px;
+    height: auto;
+    top: 0;
+    right:-100%;
+    padding: 80px 30px;
+   visibility:hidden;
+   overflow-y: auto;
+	transition:0.5s;
+	transition-property:right,visibility;
+    
+  }
+
+  header.sticky .navigation{
+    line-height: 55px;
+  }
+
+  header .navigation .menu.active{
+    right: 0;
+    visibility: visible;
+  }
+
+  .menu-item{
+    position: relative;
+  }
+
+ 
+  header.sticky .menu-item .sub-menu{
+    top: 0;
+  }
+
+ 
+
+  .close-btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-size: 25px;
+    background-position: center;
+    top: 0;
+    left: 0;
+    margin: 25px;
+    cursor: pointer;
+      display: inline-block;
+  }
+
+  .menu-btn{
+    
+    width: 40px;
+    height: 40px;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    display:inline-block;
+  }
+
+  header{
+    padding: 15px 20px;
+  }
+
+  header.sticky{
+    padding: 10px 20px;
+  }
+}
+  
+
+/* For Whatsapp */
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}

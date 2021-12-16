@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ganpurti</title>
+    <link rel="icon" type="image/x-icon" href="images/GanapurtiLogo.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+    <!--____________________For Icon _______________________-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    
+    <!--____________________For Fonts _______________________-->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Kaisei+Tokumin:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    
+    
+    
+    <!-- For Javascript -->
+    <script src=""></script>
+    
+    <!-- For CSS -->
+    <link rel="stylesheet" href="CSS/footer.css">
+	<link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/products.css">
+
+    
+    
+                                                
+</head>
+
+<body>
+    
+    <!-- Navigation Bar Start -->
+    <header>
+      <div class="header-logo">
+            <a href="index.html"><img src="images/GanapurtiLogo.png" class="img-fluid" alt="logo"></a>
+        </div>
+      <div class="navigation">
+        <ul class="menu">
+          
+            <div class="close-btn">
+            <img src="images/close.png" style="height: auto; width: 20px;">
+        </div>
+            
+          <li class="menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="products.html">Products</a></li>
+            <li class="menu-item"><a href="awards.html">Awards</a></li>
+          <li class="menu-item"><a href="aboutus.html">About Us</a></li>
+          <li class="menu-item"><a href="contactus.html">Contact Us</a></li>
+            
+            
+        </ul>
+      </div>
+      <div class="menu-btn">
+        <img src="images/menu.png" style="height: auto; width: 25px;">
+        </div>
+    </header>
+    
+    <script>
+    //javascript for the responsive navigation menu
+    var menu = document.querySelector(".menu");
+    var menuBtn = document.querySelector(".menu-btn");
+    var closeBtn = document.querySelector(".close-btn");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+
+    //javascript for the navigation bar effects on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+    </script>
+    
+    <!-- Navigation Bar End -->
+    
+    
+    
+<div class = "products">   
+<div class="container">
+  <main class="grid">
+    <article>
+      <img src="images/Products/potato.jpg" alt="Pharali Papad">
+      <div class="text">
+        <h3>Pharali Papad</h3>
+        <p>Rs. 40.00  Net Weight: 100gm</p>
+        <p>INGREDIENTS: Potato, Tapioca Pearls (Sabudana), Black Pepper, Salt Etc.</p>
+        <a href="https://wa.me/c/917212567852"
+           class="btn btn-primary btn-block">Buy Now</a>
+      </div>
+    </article>
+    <article>
+      <img src="images/Products/jawar.jpg" alt="Jawar Papad">
+      <div class="text">
+        <h3>Jawar Papad</h3>
+        <p>Rs. 40.00  Net Weight: 100gm</p>
+        <p>INGREDIENTS:Jowar Flour, Red Chilli Powder, Jeera & Salt, Etc.</p>
+        <a href="https://wa.me/c/917212567852"
+           class="btn btn-primary btn-block">Buy Now</a>
+      </div>
+    </article>
+    <article>
+      <img src="images/Products/jawar.jpg" alt="Lahsun & Harimirch Papad">
+      <div class="text">
+        <h3>Lahsun & Harimirch Papad</h3>
+        <p>Rs. 130.00  Net Weight: 500gm</p>
+        <p>INGREDIENTS:Mung, Udad, Jeera, Garlic, Hing, Green chilliSalt, Phulkar & Etc.</p>
+        <a href="https://wa.me/c/917212567852"
+           class="btn btn-primary btn-block">Buy Now</a>
+      </div>
+    </article>
+    <article>
+      <img src="images/Products/jawar.jpg" alt="Moong Papad">
+      <div class="text">
+        <h3>Moong Papad</h3>
+        <p>Rs. 130.00  Net Weight: 500gm</p>
+        <p>INGREDIENTS:Mung, Udad, Jeera, Black Pepper, Hing, Salt, Phulkar & Etc.</p>
+        <a href="https://wa.me/c/917212567852"
+           class="btn btn-primary btn-block">Buy Now</a>
+      </div>
+    </article>
+    <article>
+      <img src="images/Products/jawar.jpg" alt="Udad Papad">
+      <div class="text">
+        <h3>Udad Papad</h3>
+        <p>Rs. 130.00  Net Weight: 500gm</p>
+        <p>INGREDIENTS:Udad, Jeera, Hing, Black Pepper Salt, Phulkar & Etc.</p>
+        <a href="https://wa.me/c/917212567852"
+           class="btn btn-primary btn-block">Buy Now</a>
+      </div>
+    </article>
+   
+    
+  </main>
+</div>
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- Footer Start -->        
+<footer class="footer-section">
+          <div class="container">
+              <div class="footer-cta pt-5 pb-5">
+                  <div class="row">
+                      <div class="col-xl-4 col-md-4 mb-30">
+                          <i class="fas fa-map-marker-alt" style="color: #ff5e14; font-size: xx-large; padding: 10px;"></i>
+                          <div class="single-cta">
+                              <div class="cta-text  align-items-center">
+                                  <h4>Find us</h4>
+                                  <span>Sarswati Nagar , Amravati</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-md-4 mb-30">
+                          <i class="fas fa-phone" style="color: #ff5e14; font-size: xx-large; padding: 10px;"></i>
+                          <div class="single-cta">
+                              <div class="cta-text">
+                                  <h4>Call us</h4>
+                                  <span>7447478991</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-md-4 mb-30">
+                          <i class="far fa-envelope-open" style="color: #ff5e14; font-size: xx-large; padding: 10px;"></i>
+                          <div class="single-cta">
+                              <div class="cta-text">
+                                  <h4>Mail us</h4>
+                                  <span>saundarya.fpl@gmail.com</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="footer-content pt-5 pb-5">
+                  <div class="row">
+                      <div class="col-xl-4 col-md-4 mb-30">
+                          <div class="footer-widget">
+                              <div class="footer-logo">
+                                  <a href="index.html"><img src="images/GanapurtiLogo.png" class="img-fluid" alt="logo"></a>
+                              </div>
+                              <div class="footer-text">
+                                  <p>Ganpurti is leading papad manufacturer in Maharashtra. We have a large no of consumers around the world. We have a presence in the field of Papad.
+Our speciality lies in the manufacturing of different papad products like Moong Papad, Udad Papad, Lasoon Harimirch Papad and more.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-md-4  mb-30  align-items-center">
+                          <div class="footer-widget">
+                              <div class="footer-widget-heading">
+                                  <h3>Useful Links</h3>
+                              </div>
+                              <ul>
+                                  <li><a href="index.html">Home</a></li>
+                                  <li><a href="aboutus.html">About Us</a></li>
+                                  <li><a href="contactus.html">Contact Us</a></li>
+                                  <li><a href="awards.html">Awards</a></li>
+                                  <li><a href="products.html">Products</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-md-4  mb-30">
+                          <div class="footer-widget">
+                              <div class="footer-widget-heading">
+                                  <h3>Our Inspiration</h3>
+                                  <div class="footer-logo-1">
+                                      <a href="index.html"><img src="images/gajanan.jpg" class="img-fluid" alt="logo" ></a><br>
+                                      <p class="abc"><b>Sant. Gajanan Maharaj , Shegaon</b></p>
+                                      
+                                  </div>
+                                  <!-- hitwebcounter Code START -->
+                                  <a href="" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=7861207&style=0025&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>
+                              </div>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    
+<!-- Footer End -->
+
+          
+          <!-- Copyright Start -->
+        <div class="copyright">
+          <div class="footer-copyright">© 2021 Copyright: Designed by
+            <a class="" href="#" target="_blank" style="color: black; font-weight: 500;">JupiCom</a>
+          </div>
+        </div>
+          <!-- Copyright End-->
+    
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://wa.me/message/RJS5NWVD3ZNOA1" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+
+</footer>    
+ 
+    
+    
+</body>
+</html>

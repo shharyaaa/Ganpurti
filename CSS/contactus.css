@@ -1,0 +1,124 @@
+/* Layout: */
+.responsive-map{
+overflow: hidden;
+
+position:relative;
+height:400px;
+}
+.responsive-map iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+
+.contactus .col-main {
+  flex: 1;  
+}  
+
+.contactus .col-complementary {
+  flex: 1;  
+}
+
+/* Responsive: */
+
+@media only screen and (min-width: 640px) {
+  .contactus .layout {
+    display: flex;
+  }
+}
+
+/* etc */
+
+.contactus {
+  margin: 1.5em;
+}
+
+.contactus .container {
+  max-width: 60em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contactus .col {
+  padding: 1em;
+  margin: 0 2px 2px 0;
+  background: #ec3434;
+    
+}
+
+
+
+
+
+
+
+
+
+.social h1{
+  font-family: 'Josefin Sans', sans-serif;
+  
+  font-size: 30px;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  color: #ec3434;
+  text-align: center;
+    
+
+}
+.social .Social-media{
+  display: flex;
+  justify-content: center;
+margin-bottom: 50px;
+    
+}
+.social a{
+  display: flex;
+  background:white;
+  height: 70px;
+  width: 70px;
+  margin: 0 10px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+              -6px -6px 10px -1px rgba(255,255,255,0.7);
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: transform 0.5s
+
+}
+.social a i{
+  font-size: 50px
+  transition: transform 0.5s;
+    color: black
+}
+.social a:hover{
+  box-shadow:inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                    -0.5px -0.5px 0px -1px rgba(255,255,255,1),
+                    0.5px 0.5px 0px rgba(0,0,0,0.15),
+                    0px 12px 10px -10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(255, 0, 0, 0.1);
+  transform: translateY(2px);
+}
+.social a:hover i{
+  transform: scale(2.0);
+}
+.social a:hover .fa-facebook{
+  color: #3b5998;
+}
+.social a:hover .fa-twitter{
+  color: #00acee;
+}
+.social a:hover .fa-whatsapp{
+  color: #4fce5d;
+}
+.social a:hover .fa-instagram{
+  color: #f14843;
+}
+.social a:hover .fa-youtube{
+  color: #f00;
+}
